@@ -1,4 +1,4 @@
-package nl.capgemini.volleybal.volleybalgame;
+package nl.capgemini.volleybal;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

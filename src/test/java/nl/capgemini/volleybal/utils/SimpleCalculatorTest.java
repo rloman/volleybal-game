@@ -25,6 +25,13 @@ public class SimpleCalculatorTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testSubtract() {
+        int actual = this.calculator.subtract(4,3);
+
+        Assert.assertEquals(1, actual);
+    }
+
     @After
     public void tearDown() {
         this.calculator = null;

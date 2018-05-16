@@ -16,6 +16,9 @@ public class VolleybalController {
     @Autowired
     private VolleybalService service;
 
+    @Autowired
+    private Volleybal sietske;
+
 
     @PutMapping("{id}")
     // http://localhost:8080/api/volleybal/3
@@ -23,6 +26,14 @@ public class VolleybalController {
 
         return new ResponseEntity<Volleybal>(this.service.update(id, volleybal), HttpStatus.OK);
 
+    }
+
+    @GetMapping
+    public Iterable<Volleybal>findAll() {
+
+        System.err.println(this.sietske);
+
+        return this.service.findAll();
     }
 
     @DeleteMapping("{id}")

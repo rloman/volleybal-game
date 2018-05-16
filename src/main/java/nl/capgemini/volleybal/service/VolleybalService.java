@@ -18,6 +18,10 @@ public class VolleybalService {
         return this.repo.findById(id);
     }
 
+    public Iterable<Volleybal> findAll() {
+        return this.repo.findAll();
+    }
+
     @Transactional
     public Volleybal update(long id, Volleybal ball) {
         Optional<Volleybal> optionalVolleybal = this.repo.findById(id);

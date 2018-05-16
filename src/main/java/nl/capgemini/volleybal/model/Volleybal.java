@@ -12,7 +12,10 @@ public class Volleybal implements Serializable {
     @GeneratedValue
     private long id;
 
+    private String name;
+
     private double pressure;
+
 
     public long getId() {
         return id;
@@ -22,11 +25,27 @@ public class Volleybal implements Serializable {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public double getPressure() {
         return pressure;
     }
 
     public void setPressure(double pressure) {
         this.pressure = pressure;
+    }
+
+    @Override
+    public String toString() {
+        return "Volleybal{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

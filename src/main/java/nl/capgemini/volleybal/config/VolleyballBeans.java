@@ -1,6 +1,6 @@
-package nl.capgemini.volleybal.config;
+package nl.example.volleybal.config;
 
-import nl.capgemini.volleybal.model.Volleybal;
+import nl.example.volleybal.model.Volleybal;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

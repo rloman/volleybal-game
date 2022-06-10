@@ -1,4 +1,4 @@
-package nl.capgemini.volleybal;
+package nl.example.volleybal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,7 +1,7 @@
-package nl.capgemini.volleybal.service;
+package nl.example.volleybal.service;
 
-import nl.capgemini.volleybal.model.Volleybal;
-import nl.capgemini.volleybal.repository.VolleybalRepository;
+import nl.example.volleybal.model.Volleybal;
+import nl.example.volleybal.repository.VolleybalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package nl.capgemini.volleybal.model;
+package nl.example.volleybal.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

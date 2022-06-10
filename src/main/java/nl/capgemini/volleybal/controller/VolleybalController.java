@@ -1,7 +1,7 @@
-package nl.capgemini.volleybal.controller;
+package nl.example.volleybal.controller;
 
-import nl.capgemini.volleybal.model.Volleybal;
-import nl.capgemini.volleybal.service.VolleybalService;
+import nl.example.volleybal.model.Volleybal;
+import nl.example.volleybal.service.VolleybalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

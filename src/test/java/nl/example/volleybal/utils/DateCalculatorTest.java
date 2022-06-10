@@ -1,7 +1,8 @@
 package nl.example.volleybal.utils;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -17,7 +18,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(5, dayNumber);
+        Assertions.assertEquals(5, dayNumber);
     }
 
     @Test
@@ -29,7 +30,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(3, dayNumber);
+        Assertions.assertEquals(3, dayNumber);
     }
 
     @Test
@@ -41,7 +42,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(6, dayNumber);
+        Assertions.assertEquals(6, dayNumber);
     }
 
     @Test
@@ -53,7 +54,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(5, dayNumber);
+        Assertions.assertEquals(5, dayNumber);
     }
 
     @Test
@@ -65,7 +66,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(4, dayNumber);
+        Assertions.assertEquals(4, dayNumber);
     }
 
     @Test
@@ -77,7 +78,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(4, dayNumber);
+        Assertions.assertEquals(4, dayNumber);
     }
 
     @Test
@@ -89,7 +90,7 @@ public class DateCalculatorTest {
 
         DayOfWeek dayOfWeek = DateCalculator.getDayOfWeekEnum(year, month, dayOfMonth);
 
-        Assert.assertEquals(DayOfWeek.FRIDAY, dayOfWeek);
+        Assertions.assertEquals(DayOfWeek.FRIDAY, dayOfWeek);
 
     }
 
@@ -102,7 +103,7 @@ public class DateCalculatorTest {
 
         String dayOfWeek = DateCalculator.getDayOfWeekEnglish(year, month, dayOfMonth);
 
-        Assert.assertEquals("Friday", dayOfWeek);
+        Assertions.assertEquals("Friday", dayOfWeek);
 
     }
 
@@ -115,7 +116,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(2, dayNumber);
+        Assertions.assertEquals(2, dayNumber);
 
     }
 
@@ -128,7 +129,7 @@ public class DateCalculatorTest {
 
         int dayNumber = DateCalculator.getDayOfWeekNumber(year, month, dayOfMonth);
 
-        Assert.assertEquals(2, dayNumber);
+        Assertions.assertEquals(2, dayNumber);
 
     }
 
@@ -138,7 +139,7 @@ public class DateCalculatorTest {
         LocalDate now = LocalDate.now();
 
         while (from.compareTo(now) <= 0) {
-            Assert.assertEquals(from.getDayOfWeek(), DateCalculator.getDayOfWeekEnum(from.getYear(), from.getMonthValue(), from.getDayOfMonth()));
+            Assertions.assertEquals(from.getDayOfWeek(), DateCalculator.getDayOfWeekEnum(from.getYear(), from.getMonthValue(), from.getDayOfMonth()));
             from = from.plusDays(1);
         }
     }
@@ -148,10 +149,10 @@ public class DateCalculatorTest {
 
         LocalDate eloyDay = LocalDate.of(0, 1, 1);
 
-        Assert.assertEquals(DayOfWeek.SATURDAY, eloyDay.getDayOfWeek());
+        Assertions.assertEquals(DayOfWeek.SATURDAY, eloyDay.getDayOfWeek());
 
         int dayNumberOfDateCalculator = DateCalculator.getDayOfWeekNumber(0, 1, 1);
 
-        Assert.assertEquals(0, dayNumberOfDateCalculator);
+        Assertions.assertEquals(0, dayNumberOfDateCalculator);
     }
 }

@@ -1,6 +1,9 @@
 package nl.example.volleybal.utils;
 
-/*
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class SimpleCalculatorTest {
 
     private SimpleCalculator calculator;
@@ -15,30 +18,18 @@ public class SimpleCalculatorTest {
     public void testAdd() {
         int actual = this.calculator.add(3, 4);
 
-        Assert.assertEquals(7, actual);
+        Assertions.assertEquals(7, actual);
     }
 
     @Test
-    public void testSubtract() {
-        int actual = this.calculator.subtract(15, 3);
+    public void testPow() {
+        int actual = this.calculator.pow(2, 3);
 
-        Assert.assertEquals(12, actual);
+        Assertions.assertEquals(8, actual);
     }
 
     @Test
-    public void testSubtract2() {
-        Assert.assertEquals(3, this.calculator.subtract(5,2));
+    public void testPow2() {
+        Assertions.assertEquals(25, this.calculator.pow(5,2));
     }
-
-
-    // it is not perse needed here, more for instruction. e.g. when you have a large object above
-    // and want to reset the result of the tests above, than ... this might be handy
-    @After
-    public void tearDown() {
-        this.calculator.resetResult();
-    }
-
-
 }
-
- */

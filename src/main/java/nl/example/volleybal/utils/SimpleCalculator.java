@@ -1,4 +1,4 @@
-package nl.capgemini.volleybal.utils;
+package nl.example.volleybal.utils;
 
 import org.springframework.stereotype.Component;
 
@@ -11,8 +11,8 @@ public class SimpleCalculator implements Calculator {
     }
 
     @Override
-    public int subtract(int a, int b) {
-        return a-b;
+    public int pow(int a, int b) {
+        return (int) (Math.pow(a, b));
     }
 
 
